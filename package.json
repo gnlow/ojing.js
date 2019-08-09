@@ -1,0 +1,26 @@
+{
+  "name": "ojing",
+  "version": "0.0.1",
+  "description": "",
+  "source": "src/ojing.js",
+  "main": "dist/ojing.js",
+  "module": "dist/ojing.mjs",
+  "unpkg": "dist/ojing.umd.js",
+  "scripts": {
+    "build": "microbundle --no-sourcemap",
+    "dev": "microbundle --no-sourcemap --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnlow/ojing.js.git"
+  },
+  "author": "Gnlow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gnlow/ojing.js/issues"
+  },
+  "homepage": "https://github.com/gnlow/ojing.js#readme",
+  "devDependencies": {
+    "microbundle": "^0.11.0"
+  }
+}
