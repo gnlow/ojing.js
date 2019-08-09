@@ -1,11 +1,13 @@
 {
   "name": "ojing",
   "version": "0.0.1",
-  "description": "",
+  "description": "Make your number simple",
+
   "source": "src/ojing.js",
   "main": "dist/ojing.js",
   "module": "dist/ojing.mjs",
   "unpkg": "dist/ojing.umd.js",
+
   "scripts": {
     "build": "microbundle --no-sourcemap",
     "dev": "microbundle --no-sourcemap --watch"
@@ -22,5 +24,11 @@
   "homepage": "https://github.com/gnlow/ojing.js#readme",
   "devDependencies": {
     "microbundle": "^0.11.0"
-  }
+  },
+  "keywords": [
+    "number"
+  ],
+  "files": [
+    "dist"
+  ]
 }
