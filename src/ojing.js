@@ -1,5 +1,5 @@
 export default class Ojing {
-    constructor(numbers, accu){
+    constructor(numbers, accu = 2){
         this.accu = accu;
         this.numbers = numbers;
         this.intervals = this.numbers.map( (n, i, arr) => n - (arr[i-1] ? arr[i-1] : n));
@@ -25,6 +25,12 @@ export default class Ojing {
         }
     }
     simplify(){
-        return this.numbers.map( (n, i, arr) => Math.floor( (n-arr[0]) / this.unit * 10**this.accu ) / 10**this.accu );
+        var out = this.numbers.map( (n, i, arr) => Math.floor( (n-arr[0]) / this.unit * 10**this.accu ) / 10**this.accu );
+        out.unit = this.unit;
+        out.start = this.numbers[0];
+        return out;
+    }
+    static fromArray(arr){
+        return new Ojing(arr);
     }
 }
